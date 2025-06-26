@@ -1,0 +1,11 @@
+# Ignore node_modules folders
+node_modules/
+backend/node_modules/
+ecommerce-frontend/node_modules/
+
+# Ignore env files
+.env
+
+# Ignore system files
+.DS_Store
+Thumbs.db

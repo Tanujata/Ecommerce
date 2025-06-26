@@ -1,0 +1,84 @@
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.product-card {
+  background: #fff;
+  border-radius: 1.2rem;
+  box-shadow: 0 2px 12px rgba(233, 30, 99, 0.08);
+  transition:
+    transform 0.2s,
+    box-shadow 0.2s,
+    border 0.2s;
+  padding: 1.5rem;
+  margin: 1rem;
+  text-align: center;
+  cursor: pointer;
+  border: 2px solid transparent;
+  position: relative;
+  overflow: hidden;
+}
+
+.product-card img {
+  width: 100%;
+  max-width: 220px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 1rem;
+  margin-bottom: 1rem;
+  transition: transform 0.3s;
+}
+
+.product-card h3 {
+  color: #e91e63;
+  margin: 0.5rem 0;
+  font-weight: 700;
+  font-size: 1.3rem;
+}
+
+.product-card p {
+  color: #555;
+  margin: 0.3rem 0;
+}
+
+.product-card .price {
+  color: #1976d2;
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+/* Hover Effects */
+.product-card:hover {
+  transform: translateY(-10px) scale(1.03);
+  box-shadow:
+    0 8px 32px rgba(233, 30, 99, 0.18),
+    0 2px 8px rgba(25, 118, 210, 0.10);
+  border: 2px solid #e91e63;
+  background: linear-gradient(120deg, #fff 60%, #ffe3f0 100%);
+}
+
+.product-card:hover img {
+  transform: scale(1.07) rotate(-2deg);
+  box-shadow: 0 4px 16px rgba(233, 30, 99, 0.12);
+}
+
+/* Optional: Add a subtle animated overlay on hover */
+.product-card::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: linear-gradient(120deg, rgba(233,30,99,0.08), rgba(25,118,210,0.08));
+  opacity: 0;
+  transition: opacity 0.3s;
+  pointer-events: none;
+  border-radius: 1.2rem;
+}
+
+.product-card:hover::after {
+  opacity: 1;
+}

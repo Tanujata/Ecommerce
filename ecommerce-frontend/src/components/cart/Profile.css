@@ -1,0 +1,33 @@
+/* Profile.css */
+
+.profile-page {
+  background: linear-gradient(135deg, #fff5f7, #ffe0ec);
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.profile-page h3 {
+  font-family: 'Segoe UI', sans-serif;
+  font-weight: 600;
+  color: #d63384;
+}
+
+.profile-page table {
+  background-color: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.profile-page table th,
+.profile-page table td {
+  vertical-align: middle;
+  text-align: center;
+}
+
+.btn-outline-primary {
+  border-radius: 25px;
+  padding: 10px 25px;
+  font-weight: bold;
+  background-color: #f8f9fa;
+}

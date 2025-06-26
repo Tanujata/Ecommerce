@@ -1,0 +1,80 @@
+/* Cake-Themed Navbar */
+.navbar {
+  background: linear-gradient(90deg, #ffb6b9 0%, #ffe0e9 100%);
+  box-shadow: 0 4px 18px rgba(233, 30, 99, 0.10);
+  border-radius: 0 0 2rem 2rem;
+  padding: 1rem 2.5rem;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  transition: background 0.3s;
+}
+/* Brand name */
+.navbar-brand {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #e91e63 !important;
+  letter-spacing: 2px;
+  text-shadow: 0 2px 8px #fff3f8;
+  transition: color 0.3s;
+}
+
+/* Nav links */
+.nav-link {
+  color: #e91e63 !important;
+  font-weight: 600;
+  font-size: 1.08rem;
+  margin-left: 1.5rem;
+  margin-right: 0.5rem;
+  transition: color 0.2s, transform 0.2s;
+  border-radius: 0.5rem;
+  padding: 0.5rem 1rem;
+  position: relative;
+}
+
+.nav-link:hover, .nav-link.active {
+  color: #fff !important;
+  background: linear-gradient(90deg, #e91e63 60%, #ffb6b9 100%);
+  box-shadow: 0 2px 8px rgba(233, 30, 99, 0.10);
+  transform: translateY(-2px) scale(1.07);
+  text-decoration: none;
+}
+
+/* Logout button styled as nav-link */
+.btn-link.nav-link {
+  color: #e91e63 !important;
+  background: none;
+  border: none;
+  font-weight: 600;
+  margin-left: 1.5rem;
+  transition: color 0.2s;
+  cursor: pointer;
+}
+
+.btn-link.nav-link:hover {
+  color: #fff !important;
+  background: linear-gradient(90deg, #e91e63 60%, #ffb6b9 100%);
+  text-decoration: none;
+}
+
+/* Responsive: Mobile view */
+@media (max-width: 768px) {
+  .navbar {
+    padding: 1rem 1rem;
+    border-radius: 0 0 1.2rem 1.2rem;
+  }
+  .navbar-nav {
+    text-align: center;
+    margin-top: 1rem;
+  }
+  .nav-link,
+  .btn-link.nav-link {
+    display: block;
+    margin: 10px auto;
+    width: 90%;
+    text-align: center;
+  }
+  .navbar-brand {
+    font-size: 1.5rem;
+  }
+}
