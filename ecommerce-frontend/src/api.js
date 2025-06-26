@@ -3,22 +3,16 @@ import axios from 'axios';
 const API_URL = 'http://localhost:5000/api'; // your backend URL
 const api = axios.create({ baseURL: API_URL });
 
-// =======================
-// ✅ Auth APIs
-// =======================
+
 export const register = (data) => api.post('/auth/register', data);
 export const login = (data) => api.post('/auth/login', data);
 
-// =======================
-// ✅ Helper to get token
-// =======================
+
 const getToken = () => {
   return localStorage.getItem('token') || '';
 };
 
-// =======================
-// ✅ Product APIs
-// =======================
+
 export const getProducts = () => api.get('/products');
 
 export const getProduct = (id) => api.get(`/products/${id}`);
@@ -49,9 +43,7 @@ export const deleteProduct = (id) => {
   });
 };
 
-// =======================
-// ✅ Order APIs
-// =======================
+
 export const getOrders = () => {
   return api.get('/orders', {
     headers: {
