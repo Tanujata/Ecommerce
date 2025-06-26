@@ -34,7 +34,7 @@ export default function Login() {
 
   return (
     <div className="position-relative vh-100 overflow-hidden">
-      {/* 🍰 Blurred Background Image */}
+      
       <div
         className="position-absolute top-0 start-0 w-100 h-100"
         style={{
@@ -47,7 +47,6 @@ export default function Login() {
         }}
       ></div>
 
-      {/* 🎂 Foreground Content */}
       <div
         className="position-relative d-flex justify-content-center align-items-center vh-100"
         style={{ zIndex: 2 }}
