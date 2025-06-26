@@ -1,4 +1,4 @@
-const AWS = require('aws-sdk'); // ✅ SDK v2
+const AWS = require('aws-sdk'); //  SDK v2
 const multer = require('multer');
 const multerS3 = require('multer-s3');
 require('dotenv').config();
