@@ -8,7 +8,7 @@ import ProductForm from "./components/Products/ProductForm";
 import Orders from "./components/Orders/Orders";
 import Cart from './components/cart/Cart';
 import Checkout from './components/Orders/Checkout';
-import Profile from './components/cart/Profile'; // 👈 Import Profile
+import Profile from './components/cart/Profile'; 
 import "bootstrap/dist/css/bootstrap.min.css";
 
 export default function App() {
@@ -25,7 +25,7 @@ export default function App() {
           <Route path="/orders" element={<Orders />} />
           <Route path="/cart" element={<Cart />} />
           <Route path="/checkout" element={<Checkout />} />
-          <Route path="/profile" element={<Profile />} /> {/* ✅ Profile Route */}
+          <Route path="/profile" element={<Profile />} /> {/* Profile Route */}
           <Route path="/" element={<Navigate to="/products" />} />
         </Routes>
       </div>
