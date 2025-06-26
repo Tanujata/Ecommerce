@@ -41,10 +41,10 @@ export default function Signup() {
         {/* Right: Signup form */}
         <div className="col-md-6 d-flex align-items-center justify-content-center">
           <div className="w-75">
-            <h2 className="text-center mb-4">🧁 Join Our Cake Family!</h2>
+            <h2 className="text-center mb-4">Join Our Cake Family!</h2>
             <form onSubmit={handleSubmit}>
               <div className="mb-3">
-                <label className="form-label">🎂 Your Sweet Name</label>
+                <label className="form-label"> Your Sweet Name</label>
                 <input
                   type="text"
                   className="form-control"
@@ -66,7 +66,7 @@ export default function Signup() {
                 />
               </div>
               <div className="mb-3">
-                <label className="form-label">🍰 Secret Cake Code</label>
+                <label className="form-label">Secret Cake Code</label>
                 <input
                   type="password"
                   className="form-control"
@@ -77,7 +77,7 @@ export default function Signup() {
                 />
               </div>
               <div className="mb-3">
-                <label className="form-label">🧁 I am signing up as:</label>
+                <label className="form-label"> I am signing up as:</label>
                 <select
                   className="form-select"
                   value={role}
